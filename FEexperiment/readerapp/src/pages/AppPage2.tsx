@@ -1,5 +1,4 @@
 import '../App.css';
-import Layout from './Layout';
 import Collapse from '../components/Collapse';
 
 function AppPage2() {
