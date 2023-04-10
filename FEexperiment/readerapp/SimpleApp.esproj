@@ -1,4 +1,5 @@
-<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.83-alpha">  <PropertyGroup Label="Globals">
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.83-alpha">
+  <PropertyGroup Label="Globals">
     <ProjectGuid>574d3b52-1b7b-480d-b55d-02333f919f9b</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup>
@@ -6,7 +7,4 @@
     <JavaScriptTestRoot>src\</JavaScriptTestRoot>
     <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
   </PropertyGroup>
-  <ItemGroup>
-    <Folder Include="src\pages\" />
-  </ItemGroup>
 </Project>

@@ -1,35 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
+import { Routes, Route } from "react-router-dom";
 import './App.css';
 import Layout from './pages/Layout';
-import Collapse from './components/Collapse';
+import AppPage0 from "./pages/AppPage0";
+import AppPage1 from "./pages/AppPage1";
+import AppPage2 from "./pages/AppPage2";
 
 function App() {
   return (
     <div className="App">
       <Layout />
-      <Collapse id="obj1" label="Object 1 React Content">
-        <p>Object 1 section</p>
-      </Collapse>
-      <Collapse id="obj2" label="Object 2 React Content">
-        <p>Object 2 section</p>
-      </Collapse>
-      <Collapse id="mainApp" label="Default React Content">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        </header>
-        </Collapse>
+      <Routes>
+        <Route path="/" element={<AppPage0 />} />
+        <Route path="/page1" element={<AppPage1 />} />
+        <Route path="/page2" element={<AppPage2 />} />
+      </Routes>
     </div>
   );
 }

@@ -28,7 +28,7 @@ class Collapse extends React.Component<Props> {
     if (content != null) {
       toggle?.classList.toggle("active");
 
-      if (content.className == "content") {
+      if (content.className === "content") {
         content.className = "content_show";
       }
       else {
