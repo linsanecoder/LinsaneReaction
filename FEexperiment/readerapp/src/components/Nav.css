@@ -11,6 +11,16 @@
 	flex-wrap: wrap;
 }
 
+.flex-container > a {
+	background-color: #f1f1f1;
+	margin: 10px;
+	width: 200px;
+	padding: 0px 5px 5px 5px;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+}
+
 .flex-container > div {
 	background-color: #f1f1f1;
 	margin: 10px;
@@ -18,4 +28,5 @@
 	padding: 0px 5px 5px 5px;
 	text-align: center;
 	font-size: 20px;
+	text-decoration: none;
 }
