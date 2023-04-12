@@ -14,6 +14,7 @@ function Layout() {
         <div>Some other menu</div>
         <Link to="/Page3/Details">App Pg 3 w Details</Link>
         <Link to="/Page4">App Page 4</Link>
+        <Link to="/Click">Click</Link>
       </Nav>
     </div>
   );

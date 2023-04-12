@@ -8,6 +8,7 @@ import AppPage3 from "./pages/AppPage3";
 import AppPage4 from "./pages/AppPage4";
 import Details from "./components/Details";
 import Details3 from "./components/Details3";
+import Click from "./components/Click";
 
 function App() {
   return (
@@ -21,8 +22,10 @@ function App() {
           <Route path="details" element={<Details title="Name" desc="Detail" />} />
         </Route>
         <Route path="/page4" element={<AppPage4 />}>
+          <Route index element="Please select a category above." />
           <Route path=":catId" element={<Details3 />} />
         </Route>
+        <Route path="/click" element={<Click />} />
         <Route path="*" element={ <h1>Page Not Found</h1> } />
       </Routes>
     </div>
