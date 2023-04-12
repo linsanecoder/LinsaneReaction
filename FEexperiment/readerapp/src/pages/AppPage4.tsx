@@ -9,7 +9,10 @@ function AppPage4() {
     <div className="App">
       <ul>
         {categories.map(cat => (
-          <li key={cat.id}><NavLink to={cat.id}>{cat.name}</NavLink></li>
+          <li key={cat.id}><NavLink
+            style={({ isActive }) => ({ color: isActive ? "red" : "blue", })}
+            to={cat.id}>{cat.name}
+          </NavLink></li>
         ))}
       </ul>
       <Outlet />
