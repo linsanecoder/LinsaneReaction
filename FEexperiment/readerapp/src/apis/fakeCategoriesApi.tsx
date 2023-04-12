@@ -232,9 +232,8 @@ const categories = [
 ];
 
 export function getSession({ sessionId, catId }: { sessionId: string, catId: string }) {
-  return categories;
-    //.find(({ id }) => id === catId)
-    //.sessions.find(({ id }) => id === sessionId);
+  const category = categories.find(({ id }) => id === catId);
+  return category?.sessions.find(({ id }) => id === sessionId);
 }
 
 export function getCategory({ catId }: { catId: string }) {
