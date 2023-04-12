@@ -3,7 +3,7 @@ import Collapse from '../components/Collapse';
 
 function AppPage1() {
   return (
-    <div className="App1">
+    <div className="App">
       <Collapse id="pg1obj1" label="Page 1 Object 1 React Content">
         <p>Object 1 section</p>
       </Collapse>

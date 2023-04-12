@@ -1,19 +1,21 @@
 import '../App.css';
 import Collapse from '../components/Collapse';
 import { getCategories } from "../apis/fakeCategoriesApi"
+import { Outlet } from "react-router-dom"
 
-function AppPage2() {
+function AppPage3() {
   const categories = getCategories();
 
   return (
     <div className="App">
-      {categories.map(cat => (
-      <Collapse id={cat.id} label={cat.name}>
-        <p>Object {cat.id} section</p>
-      </Collapse>
-      ))}
+      <ul>
+        {categories.map(cat => (
+          <li key={cat.id}>{cat.name}</li>
+        ))}
+      </ul>
+      <Outlet />
     </div>
   );
 }
 
-export default AppPage2;
+export default AppPage3;
